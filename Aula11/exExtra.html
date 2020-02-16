@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Nacionalidade</h1>
+    Qual país você nasceu? <input id="pais">
+    <input type="button" value="Confirma" id="confirma" onclick="confirmar()">
+    <div id="resultado"></div>
+
+    <script>
+        function confirmar(){
+            var pais = window.document.getElementById('pais');
+            var resultado = window.document.getElementById('resultado');
+
+            if(pais.value != 'Brasil'){
+                resultado.innerHTML = 'Você nâo é brasileiro, que pena';
+                
+            }
+            else {
+                resultado.innerHTML = 'Você é brasileiro que orgulho!!';
+            }
+        }
+
+    </script>
+</body>
+</html>
